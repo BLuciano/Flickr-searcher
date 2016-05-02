@@ -48,4 +48,18 @@ body {
   font-size: 1.15em;
 }
 
+.results {
+  margin-bottom: 5em;
+  width: 100%;
+}
+.results .image {
+  display: inline-block;
+  width: 30%;
+  margin: 2em 1%;
+}
+.results .image img {
+  height: 250px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
