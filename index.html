@@ -11,16 +11,25 @@
   <div class="container" ng-controller="flickrCtrl">
     <section class="mainHdr">
       <h1>Flickr Searcher</h1>
-      <form name="search" ng-submit="searchFlickr()" class="search-form">
+      <form name="search" ng-submit="searchFlickr(tag)" class="search-form">
         <input type="text" class="search-input" ng-model="tag" name="tag" placeholder="Enter a tag to search for"/>
         <input type="submit" value="Search" class="btn"/> 
       </form>
+      
+      <!-- Messages and Errors -->
       <p ng-if="!valid" class="message">
         Please enter something to search!
       </p>
-      <p ng-if="search.$submitted && valid && !result" class="message">
+      <p ng-if="valid && !results && !error" class="message">
         Searching Flickr for {{word}}...
       </p>
+      <p ng-if="valid && error" class="message">
+        Error searching for {{word}}
+      </p>
+      <p ng-if="search.$submitted && results" class="message">
+        There are {{results.total}} results for {{word}}
+      </p>
+     
     </section>
 
     <section class="results">
