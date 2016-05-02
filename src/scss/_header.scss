@@ -1,0 +1,32 @@
+.mainHdr{
+	padding: 4em 0 2em 0;
+
+	h1{
+		font-size: 3em;
+		color: $blue;
+	}
+
+	.search-form{
+		padding: 2em;
+	}
+
+	.search-input{
+		padding: .75em;
+	}
+
+	.btn{
+		padding: .75em;
+		margin-left: 1em;
+		color: #fff;
+		background-color: #00A2FF;
+		border: none;
+
+		&:hover{
+			background-color: darken(#00A2FF, 25);
+		}
+	}
+
+	.message{
+		font-size: 1.15em;
+	}
+}

@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  border-left: 10px solid #00004d;
+  border-right: 10px solid #00004d;
+}
+
+body {
+  min-height: 100%;
+  color: #333;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.mainHdr {
+  padding: 4em 0 2em 0;
+}
+.mainHdr h1 {
+  font-size: 3em;
+  color: #00004d;
+}
+.mainHdr .search-form {
+  padding: 2em;
+}
+.mainHdr .search-input {
+  padding: .75em;
+}
+.mainHdr .btn {
+  padding: .75em;
+  margin-left: 1em;
+  color: #fff;
+  background-color: #00A2FF;
+  border: none;
+}
+.mainHdr .btn:hover {
+  background-color: #005180;
+}
+.mainHdr .message {
+  font-size: 1.15em;
+}
+
+/*# sourceMappingURL=styles.css.map */

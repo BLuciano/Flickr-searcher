@@ -1,0 +1,22 @@
+html{
+  box-sizing: border-box;
+  min-height: 100%;
+  border-left: 10px solid $blue;
+  border-right: 10px solid $blue;
+}
+
+body{
+	min-height: 100%;
+	color: #333;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container{
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 1em;
+	text-align: center;
+}
