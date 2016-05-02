@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="build/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="build/css/styles.css">
+  <script type="text/javascript" src='build/js/app.js'></script>
 </head>
 <body>
   <div class="container" ng-controller="flickrCtrl">
@@ -17,18 +18,20 @@
       </form>
       
       <!-- Messages and Errors -->
-      <p ng-if="!valid" class="message">
-        Please enter something to search!
-      </p>
-      <p ng-if="valid && !results && !error" class="message">
-        Searching Flickr for {{word}}...
-      </p>
-      <p ng-if="valid && error" class="message">
-        Error searching for {{word}}
-      </p>
-      <p ng-if="search.$submitted && results" class="message">
-        There are {{results.total}} results for {{word}}
-      </p>
+      <div ng-if="search.$submitted">
+        <p ng-if="!valid" class="message">
+          Please enter something to search!
+        </p>
+        <p ng-if="valid && !results && !error" class="message">
+          Searching Flickr for {{word}}...
+        </p>
+        <p ng-if="valid && error" class="message">
+          Error searching for {{word}}
+        </p>
+        <p ng-if="valid && results" class="message">
+          There are {{results.total}} results for {{word}}
+        </p>
+      </div>
      
     </section>
 
@@ -36,6 +39,5 @@
     <!-- Search results will go here -->
     </section>
   </div>
-  <script type="text/javascript" src='build/js/app.js'></script>
 </body>
 </html>

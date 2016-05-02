@@ -88,7 +88,6 @@
 	      if(word){
 	        $scope.valid = true;
 	      } else { 
-	        $scope.search.$setPristine();
 	        $scope.valid = false;
 	        return;
 	      }
