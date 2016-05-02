@@ -1,6 +1,7 @@
 var angular = require('angular');
+var ngAnimate = require('angular-animate');
 
-angular.module('flickrApp', [])
+angular.module('flickrApp', [ngAnimate])
   .config(function($httpProvider) {
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];

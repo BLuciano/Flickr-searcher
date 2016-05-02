@@ -20,6 +20,8 @@
 		color: #fff;
 		background-color: #00A2FF;
 		border: none;
+		-webkit-transition: all .25s linear;
+		transition: all .25s linear;
 
 		&:hover{
 			background-color: darken(#00A2FF, 25);
@@ -28,5 +30,19 @@
 
 	.message{
 		font-size: 1.15em;
+		-webkit-transition: all .25s linear;
+		transition: all .25s linear;
+	
+		&.ng-enter, &.ng-leave.ng-leave-active{
+			margin-right: 300px;
+			opacity: 0;
+			-webkit-transition: none;
+			transition: none;
+		}
+
+		&.ng-leave, &.ng-enter.ng-enter-active{
+			opacity: 1;
+			margin-right: 0;
+		}
 	}
 }
