@@ -47,8 +47,8 @@
     </section>
 
     <section class="next-prev">
-      <button ng-click="page = page - 1; getPhotos(page)" ng-if="page > 1" class="btn">Prev</button>
-      <button ng-click="page = page + 1; getPhotos(page)" ng-if="page < results.pages" class="btn">Next</button>
+      <button ng-click="prev()" ng-if="page > 1" class="btn">Prev</button>
+      <button ng-click="next()" ng-if="page < results.pages" class="btn">Next</button>
     </section>
   </div>
 </body>

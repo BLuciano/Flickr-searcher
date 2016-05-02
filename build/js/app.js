@@ -59,7 +59,7 @@
 	    //Gets photos from Flickr API and updates the view
 	    //with results or any error messages.
 	    $scope.getPhotos = function(){
-	      alert($scope.page);
+	      console.log($scope.page);
 	      var url = 'https://api.flickr.com/services/rest';
 	      var params = {
 	        method: 'flickr.photos.search',
@@ -98,6 +98,16 @@
 	      $scope.page = 1;
 	      $scope.tag = '';
 	      $scope.results = '';
+	      $scope.getPhotos();
+	    };
+
+	    $scope.prev = function(){
+	      $scope.page-= 1; 
+	      $scope.getPhotos();
+	    };
+	    
+	    $scope.next = function(){
+	      $scope.page+= 1; 
 	      $scope.getPhotos();
 	    };
 	  }]);
