@@ -29,7 +29,6 @@ angular.module('flickrApp', [])
       .then(function(response) {
         $scope.results = response.data.photos;
         $scope.error = false;
-        console.log(response.data.photos);
       },
       function(response) {
         $scope.error = true;

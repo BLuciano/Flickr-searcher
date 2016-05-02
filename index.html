@@ -35,8 +35,11 @@
      
     </section>
 
-    <section class="results">
     <!-- Search results will go here -->
+    <section ng-if="results" class="results">
+      <div class="image" ng-repeat="result in results.photo">
+        <img ng-src="https://farm{{result.farm}}.staticflickr.com/{{result.server}}/{{result.id}}_{{result.secret}}.jpg" />
+      </div> 
     </section>
   </div>
 </body>
