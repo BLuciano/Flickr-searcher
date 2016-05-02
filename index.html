@@ -38,8 +38,12 @@
     <!-- Search results will go here -->
     <section ng-if="results" class="results">
       <div class="image" ng-repeat="result in results.photo">
-        <img ng-src="https://farm{{result.farm}}.staticflickr.com/{{result.server}}/{{result.id}}_{{result.secret}}.jpg" />
-      </div> 
+        <a href="" ng-click="displayImg = true" ng-init="displayImg= false"><img ng-src="https://farm{{result.farm}}.staticflickr.com/{{result.server}}/{{result.id}}_{{result.secret}}.jpg" /></a>
+        
+        <div class="modalImg" ng-show="displayImg" ng-click="displayImg = false">
+          <img ng-class="{showModal : displayImg}" ng-src="https://farm{{result.farm}}.staticflickr.com/{{result.server}}/{{result.id}}_{{result.secret}}.jpg" />
+        </div>
+      </div>
     </section>
   </div>
 </body>

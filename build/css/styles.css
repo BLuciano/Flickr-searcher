@@ -89,5 +89,27 @@ body {
   height: 250px;
   width: 100%;
 }
+.results .modalImg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  -webkit-transition: .5s linear all;
+  transition: .5s linear all;
+}
+.results .modalImg img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10%;
+  -webkit-transition: .5s linear all;
+  transition: .5s linear all;
+}
+.results .modalImg img.showModal {
+  width: 500px;
+  height: 500px;
+}
 
 /*# sourceMappingURL=styles.css.map */

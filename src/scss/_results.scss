@@ -30,4 +30,29 @@
 			width: 100%;
 		}
 	}
+
+	.modalImg{
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		left: 0;
+		right: 0;
+		top: 0;
+		background-color: rgba(0,0,0,.95);
+		-webkit-transition: .5s linear all;
+			transition: .5s linear all;
+	
+		img{
+			width: 100px;
+			height: 100px;
+			margin-top: 10%;
+			-webkit-transition: .5s linear all;
+			transition: .5s linear all;
+
+			&.showModal{
+				width: 500px;
+				height: 500px;
+			}
+		}
+	}
 }
