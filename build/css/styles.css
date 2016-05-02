@@ -21,6 +21,19 @@ body {
   text-align: center;
 }
 
+.btn {
+  padding: .75em;
+  margin-left: 1em;
+  color: #fff;
+  background-color: #00A2FF;
+  border: none;
+  -webkit-transition: all .25s linear;
+  transition: all .25s linear;
+}
+.btn:hover {
+  background-color: #005180;
+}
+
 .mainHdr {
   padding: 4em 0 2em 0;
 }
@@ -33,18 +46,6 @@ body {
 }
 .mainHdr .search-input {
   padding: .75em;
-}
-.mainHdr .btn {
-  padding: .75em;
-  margin-left: 1em;
-  color: #fff;
-  background-color: #00A2FF;
-  border: none;
-  -webkit-transition: all .25s linear;
-  transition: all .25s linear;
-}
-.mainHdr .btn:hover {
-  background-color: #005180;
 }
 .mainHdr .message {
   font-size: 1.15em;
@@ -110,6 +111,10 @@ body {
 .results .modalImg img.showModal {
   width: 500px;
   height: 500px;
+}
+
+.next-prev {
+  margin-bottom: 5em;
 }
 
 /*# sourceMappingURL=styles.css.map */

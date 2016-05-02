@@ -58,13 +58,15 @@
 
 	    //Gets photos from Flickr API and updates the view
 	    //with results or any error messages.
-	    function getPhotos(){
+	    $scope.getPhotos = function(){
+	      alert($scope.page);
 	      var url = 'https://api.flickr.com/services/rest';
 	      var params = {
 	        method: 'flickr.photos.search',
 	        api_key: '530a7056fd1d44589661f5c0dfb8fb21',
 	        tags: $scope.word,
 	        format: 'json',
+	        page : $scope.page,
 	        nojsoncallback: 1
 	      };
 
@@ -80,7 +82,7 @@
 	      function(response) {
 	        $scope.error = true;
 	      });
-	    }
+	    };
 
 	    //Sets the tag provided by the user and calls 
 	    //function to start api search.
@@ -93,9 +95,10 @@
 	      }
 
 	      $scope.word = word;
+	      $scope.page = 1;
 	      $scope.tag = '';
 	      $scope.results = '';
-	      getPhotos();
+	      $scope.getPhotos();
 	    };
 	  }]);
 

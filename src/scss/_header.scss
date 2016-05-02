@@ -14,20 +14,6 @@
 		padding: .75em;
 	}
 
-	.btn{
-		padding: .75em;
-		margin-left: 1em;
-		color: #fff;
-		background-color: #00A2FF;
-		border: none;
-		-webkit-transition: all .25s linear;
-		transition: all .25s linear;
-
-		&:hover{
-			background-color: darken(#00A2FF, 25);
-		}
-	}
-
 	.message{
 		font-size: 1.15em;
 		-webkit-transition: all .25s linear;
