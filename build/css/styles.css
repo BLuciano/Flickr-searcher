@@ -4,6 +4,12 @@ html {
   border-left: 5em solid #00004d;
   border-right: 5em solid #00004d;
 }
+@media screen and (max-width: 1060px) {
+  html {
+    border-left: none;
+    border-right: none;
+  }
+}
 
 body {
   min-height: 100%;
@@ -19,6 +25,11 @@ body {
   margin: 0 auto;
   padding: 0 1em;
   text-align: center;
+}
+@media screen and (max-width: 1060px) {
+  .container {
+    width: 100%;
+  }
 }
 
 .btn {
@@ -44,8 +55,20 @@ body {
 .mainHdr .search-form {
   padding: 2em;
 }
+@media screen and (max-width: 425px) {
+  .mainHdr .search-form {
+    padding: 2em .5em;
+  }
+}
 .mainHdr .search-input {
   padding: .75em;
+}
+@media screen and (max-width: 425px) {
+  .mainHdr .search-input {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto 1em auto;
+  }
 }
 .mainHdr .message {
   font-size: 1.15em;
@@ -84,11 +107,35 @@ body {
 .results .image {
   display: inline-block;
   width: 30%;
-  margin: 2em 1%;
+  margin: 1em 1%;
 }
 .results .image img {
   height: 250px;
   width: 100%;
+}
+@media screen and (max-width: 625px) {
+  .results .image img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .results .image {
+    width: 45%;
+    margin: 1em 2.5%;
+  }
+}
+@media screen and (max-width: 625px) {
+  .results .image {
+    width: 75%;
+    margin: 1em auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .results .image {
+    width: 98%;
+    margin: 1em auto;
+  }
 }
 .results .modalImg {
   position: fixed;
@@ -111,6 +158,13 @@ body {
 .results .modalImg img.showModal {
   width: 500px;
   height: 500px;
+}
+@media screen and (max-width: 575px) {
+  .results .modalImg img.showModal {
+    width: 95%;
+    height: auto;
+    margin-top: 33%;
+  }
 }
 
 .next-prev {

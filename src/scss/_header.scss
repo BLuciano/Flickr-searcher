@@ -8,10 +8,20 @@
 
 	.search-form{
 		padding: 2em;
+
+		@media screen and (max-width: 425px){
+			padding: 2em .5em;
+		}
 	}
 
 	.search-input{
 		padding: .75em;
+
+		@media screen and (max-width: 425px){
+			display: inline-block;
+			width: 100%;
+			margin: 0 auto 1em auto;
+		}
 	}
 
 	.message{

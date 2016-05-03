@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container" ng-controller="flickrCtrl">
-    <section class="mainHdr">
+    <section class="mainHdr" id="top">
       <h1>Flickr Searcher</h1>
       <form name="search" ng-submit="searchFlickr(tag)" class="search-form">
         <input type="text" class="search-input" ng-model="tag" name="tag" placeholder="Enter a tag to search for"/>
@@ -29,7 +29,8 @@
           Error searching for {{word}}
         </p>
         <p ng-if="valid && results" class="message">
-          There are {{results.total}} results for {{word}}
+          There are {{results.total}} results for {{word}} <br/><br/>
+          Page : {{page}}</p>
         </p>
       </div>
      

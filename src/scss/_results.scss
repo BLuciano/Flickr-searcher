@@ -23,11 +23,31 @@
 	.image{
 		display: inline-block;
 		width: 30%;
-		margin: 2em 1%;
+		margin: 1em 1%;
 
 		img{
 			height: 250px;
 			width: 100%;
+
+			@media screen and (max-width: 625px){
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@media screen and (max-width: 800px){
+			width: 45%;
+			margin: 1em 2.5%;
+		}
+
+		@media screen and (max-width: 625px){
+			width: 75%;
+			margin: 1em auto;
+		}
+
+		@media screen and (max-width: 450px){
+			width: 98%;
+			margin: 1em auto;
 		}
 	}
 
@@ -52,6 +72,12 @@
 			&.showModal{
 				width: 500px;
 				height: 500px;
+
+				@media screen and (max-width: 575px){
+					width: 95%;
+					height: auto;
+					margin-top: 33%;
+				}
 			}
 		}
 	}

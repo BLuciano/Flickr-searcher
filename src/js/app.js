@@ -13,7 +13,6 @@ angular.module('flickrApp', [ngAnimate])
     //Gets photos from Flickr API and updates the view
     //with results or any error messages.
     $scope.getPhotos = function(){
-      console.log($scope.page);
       var url = 'https://api.flickr.com/services/rest';
       var params = {
         method: 'flickr.photos.search',
@@ -56,12 +55,14 @@ angular.module('flickrApp', [ngAnimate])
     };
 
     $scope.prev = function(){
-      $scope.page-= 1; 
+      $scope.page-= 1;
+      location.href = "#top";
       $scope.getPhotos();
     };
     
     $scope.next = function(){
-      $scope.page+= 1; 
+      $scope.page+= 1;
+      location.href = "#top";
       $scope.getPhotos();
     };
   }]);

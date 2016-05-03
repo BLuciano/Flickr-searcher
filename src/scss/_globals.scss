@@ -3,6 +3,11 @@ html{
   min-height: 100%;
   border-left: 5em solid $blue;
   border-right: 5em solid $blue;
+
+  @media screen and (max-width: 1060px){
+  	border-left: none;
+  	border-right: none;
+  }
 }
 
 body{
@@ -19,6 +24,10 @@ body{
 	margin: 0 auto;
 	padding: 0 1em;
 	text-align: center;
+
+	@media screen and (max-width: 1060px){
+		width: 100%;
+	}
 }
 
 .btn{
