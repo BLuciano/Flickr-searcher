@@ -3,6 +3,8 @@ html{
   min-height: 100%;
   border-left: 5em solid $blue;
   border-right: 5em solid $blue;
+  font-family: 'Oswald', sans-serif;
+
 
   @media screen and (max-width: 1060px){
   	border-left: none;

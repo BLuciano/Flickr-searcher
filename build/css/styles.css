@@ -3,6 +3,7 @@ html {
   min-height: 100%;
   border-left: 5em solid #00004d;
   border-right: 5em solid #00004d;
+  font-family: 'Oswald', sans-serif;
 }
 @media screen and (max-width: 1060px) {
   html {
